@@ -156,13 +156,13 @@ namespace vob {
 
         private:
             // CONSTRUCTORS
-            const_iterator(cool_chunk* c, size_t i)
-                : m_chunk(c)
+            const_iterator(const cool_chunk* chunk, size_t i)
+                : m_chunk(chunk)
                 , m_index(i) {
             }
 
             // ATTRIBUTES
-            cool_chunk* m_chunk;
+            const cool_chunk* m_chunk;
             unsigned m_index;
         };
 
